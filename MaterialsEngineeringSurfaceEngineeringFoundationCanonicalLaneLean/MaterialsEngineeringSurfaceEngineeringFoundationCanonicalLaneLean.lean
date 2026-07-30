@@ -1,0 +1,19 @@
+import canonicalLaneMathlib.AdmissibleClass
+import MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean.CrystallographyPackage
+import MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean.PhaseDiagramPackage
+import MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean.ElasticityPackage
+import MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean.FractureMechanicsPackage
+import MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean.SurfaceEngineeringPackage
+
+namespace HautevilleHouse
+namespace MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean
+
+structure MaterialsAdmittedObject where
+  crystallographyClosed : CrystallographyClosed (CrystallographyPackage.mk ...)
+  phaseDiagramClosed : PhaseDiagramClosed (PhaseDiagramPackage.mk ...)
+  elasticityClosed : ElasticityClosed (ElasticityPackage.mk ...)
+  fractureMechanicsClosed : FractureMechanicsClosed (FractureMechanicsPackage.mk ...)
+  surfaceEngineeringClosed : SurfaceEngineeringClosed (SurfaceEngineeringPackage.mk ...)
+
+end MaterialsEngineeringSurfaceEngineeringFoundationCanonicalLaneLean
+end HautevilleHouse
